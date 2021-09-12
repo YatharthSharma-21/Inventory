@@ -1,0 +1,88 @@
+.input-group {
+  display: block;
+}
+
+.input-group label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: grey;
+}
+
+.form-input {
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid rgb(160, 160, 160);
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input input {
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0;
+  background: transparent;
+}
+
+.form-input select {
+  padding: 0.25rem;
+  outline: none;
+}
+
+.form-input .fa-eye {
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.validity-circle {
+  height: 30px;
+  width: 30px;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.success-circle {
+  background-color: var(--success);
+}
+.danger-circle {
+  background-color: var(--danger);
+}
+
+.is-valid {
+  border: 2px solid var(--success);
+}
+
+.not-valid {
+  border: 2px solid var(--danger);
+}
+
+/* themes */
+
+.border-dark .form-input {
+  border: 2px solid var(--dark);
+}
+
+.border-dark label {
+  color: var(--dark) !important;
+  font-weight: 600;
+}
+
+.border-dark input {
+  color: var(--dark) !important;
+  font-weight: 600;
+}

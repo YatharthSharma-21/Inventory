@@ -1,0 +1,53 @@
+.notFound {
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    rgba(33, 150, 243, 0.6) 1.8%,
+    rgba(22, 255, 245, 0.1) 97.1%
+  );
+  display: grid;
+  place-items: center;
+}
+
+.notFound .box {
+  height: 60vh;
+  width: 40vw;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* glassmorphism */
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.notFound h1 {
+  font-size: 6rem;
+  color: #32cc98;
+  margin: 0;
+}
+
+.notFound button {
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  background: #32cc98;
+  color: white;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+
+.notFound button .lnr {
+  margin-right: 0.5rem;
+}

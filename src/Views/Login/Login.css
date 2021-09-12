@@ -1,0 +1,80 @@
+.login {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(
+    45deg,
+    rgba(33, 150, 243, 0.6) 1.8%,
+    rgba(22, 255, 245, 0.1) 97.1%
+  );
+}
+
+.login h2 {
+  margin: 1rem 0;
+  /* color: var(--text-dark); */
+  color: #32cc98;
+}
+
+.login__card {
+  height: 70vh;
+  width: 70%;
+  /* background: white; */
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 1px 10px 30px 10px rgba(245, 243, 243, 0.336);
+  position: relative;
+}
+
+.login__card__left {
+  background: url("../../assets/LoginVector.jpg");
+  background-size: contain;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grad-sphere {
+  content: "red";
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.grad-sphere:nth-child(1) {
+  right: -25px;
+  top: -25px;
+}
+.grad-sphere:nth-child(2) {
+  right: 350px;
+  bottom: -25px;
+}
+
+.login__card__right {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+
+  /* glassmorphism */
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.login__card__right .box {
+  /* background: red; */
+  width: 70%;
+}
+
+.login__card__right h1 {
+  color: var(--dark);
+  text-align: center;
+}

@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --dark: #1c2436;
+  --darker: #191f2c;
+  --success: #1cca8d;
+  --primary: rgb(50, 152, 255);
+  --danger: rgb(219, 70, 44);
+  --warning: rgb(255, 209, 4);
+  --text-dark: rgb(22, 22, 22);
+  --off-white: #dfdfdf;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.danger {
+  color: var(--danger);
 }
 
-.App-header {
-  background-color: #282c34;
+.success {
+  color: var(--success);
+}
+
+/* Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.app {
   min-height: 100vh;
+  /* background: green; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Shapes  */
+
+.online {
+  height: 15px;
+  width: 15px;
+  background: rgb(3, 192, 104);
+  border-radius: 50%;
+}
+
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+
+/* Remove default styling */
+input:-internal-autofill-selected {
+  background-color: transparent;
+}
+
+.formArea {
+  padding: 3vh 3vw;
+  width: 100%;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.container {
+  display: flex;
+  flex: 1 1;
+}
+
+.btn-primary {
   color: white;
+  background-color: var(--primary);
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 1rem auto;
 }
 
-.App-link {
-  color: #61dafb;
+.my-2 {
+  margin: 2rem 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-center {
+  text-align: center;
 }

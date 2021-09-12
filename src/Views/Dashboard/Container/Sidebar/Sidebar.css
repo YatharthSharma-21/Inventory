@@ -1,0 +1,15 @@
+.sidebar {
+  transition: all 0.5s ease-in-out;
+  width: 25vw;
+  height: 90vh;
+  overflow: hidden;
+  background: var(--dark);
+}
+
+.sidebar-closed {
+  width: 5vw;
+}
+
+.sidebar-closed .sidebar__strip__active {
+  border: none;
+}

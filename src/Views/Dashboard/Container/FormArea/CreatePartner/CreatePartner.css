@@ -1,0 +1,73 @@
+.createPartner > div {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  grid-gap: 1.5rem;
+}
+
+.createPartner .input-group {
+  /* margin: 0 2rem; */
+}
+
+.hospitalsGrp {
+  grid-column: span 2;
+}
+
+.hospitalsGrp .fa-plus {
+  background: var(--primary);
+  color: white;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.hospitalGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hospitalName {
+  padding: 1rem;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bankDetails .add-btn {
+  width: fit-content;
+  color: white;
+  border: none;
+  background: var(--primary);
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.bank_grp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #cccccc;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.bank_grp .fa-times {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  cursor: pointer;
+}
+
+.req-email-btn {
+  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}

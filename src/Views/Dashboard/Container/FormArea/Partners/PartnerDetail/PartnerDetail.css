@@ -1,0 +1,22 @@
+.partnerDet__settings__toggle {
+  background: var(--dark);
+  position: absolute;
+  color: white;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.partnerDet__settings__toggle__btn {
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.partnerDet__settings__toggle p {
+  margin: 0 0.5rem;
+}
