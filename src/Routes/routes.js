@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Redirect, Route, Switch } from "react-router-dom";
 // import ChangePass from "../ChangePass/ChangePass";
 import NotFound from "../Views/Common/NotFound/NotFound";
-// import CreatePartner from "../Dashboard/Container/FormArea/CreatePartner/CreatePartner";
+import AddItem from "../Views/Dashboard/Container/FormArea/AddItem/AddIem";
 // import CreateSample from "../Dashboard/Container/FormArea/CreateSample/CreateSample";
 // import RequestKits from "../Dashboard/Container/FormArea/RequestKits/RequestKits";
 import Home from "../Views/Dashboard/Container/FormArea/Home/Home";
@@ -101,7 +101,14 @@ const ROUTES = [
             component: () => <Home title="Admin" />,
             icon: "fas fa-home",
             title: "Home",
-          }
+          },
+          {
+            path: "/admin/add-item",
+            exact: true,
+            component: () => <AddItem heading="Add Item" />,
+            icon: "fas fa-user-plus",
+            title: "Add Item",
+          },
           
         ],
       },
